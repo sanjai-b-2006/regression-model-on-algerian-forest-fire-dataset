@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+</head>
+<body>
+    <h1>Predict Data Point</h1>
+    <form method="post">
+        <label for="Temperature">Temperature:</label><br>
+        <input type="text" id="Temperature" name="Temperature"><br>
+        <label for="RH">Relative Humidity:</label><br>
+        <input type="text" id="RH" name="RH"><br>
+        <label for="Ws">Wind Speed:</label><br>
+        <input type="text" id="Ws" name="Ws"><br>
+        <label for="Rain">Rain:</label><br>
+        <input type="text" id="Rain" name="Rain"><br>
+        <label for="FFMC">FFMC:</label><br>
+        <input type="text" id="FFMC" name="FFMC"><br>
+        <label for="DMC">DMC:</label><br>
+        <input type="text" id="DMC" name="DMC"><br>
+        <label for="ISI">ISI:</label><br>
+        <input type="text" id="ISI" name="ISI"><br>
+        <label for="Classes">Classes:</label><br>
+        <input type="text" id="Classes" name="Classes"><br>
+        <label for="Region">Region:</label><br>
+        <input type="text" id="Region" name="Region"><br>
+        <label for="model">Select Model:</label><br>
+        <select id="model" name="model">
+            <option value="ridge">Ridge Regression</option>
+            <option value="linear">Linear Regression</option>
+            <option value="lasso">Lasso Regression</option>
+            <option value="elasticnet">ElasticNet Regression</option>
+        </select><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if result is not none %}
+        <h2>Predicted Value: {{ result }}</h2>
+        <p>Model Used: {{ model_name }}</p>
+    {% endif %}
+</body>
+</html>
