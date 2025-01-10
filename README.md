@@ -1,5 +1,5 @@
 # Regression-model-on-algerian-forest-fire-dataset
-This project predicts forest fire intensity using multiple linear regression models. Key environmental factors like temperature, humidity, wind speed, and rainfall are analyzed to build the predictive model.
+This project predicts forest fire intensity using multiple linear regression models. Key environmental factors like temperature, humidity, wind speed, and rainfall are analyzed to build the predictive model. There is a application which is done using basics of flask
 # Attribute Information:
 1. Date : (DD/MM/YYYY) Day, month ('june' to 'september'), year (2012)
 Weather data observations
